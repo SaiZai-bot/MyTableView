@@ -16,6 +16,8 @@
 		386491C62EB3216A00FE9B7C /* MyTableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386491C52EB3216A00FE9B7C /* MyTableViewTests.swift */; };
 		386491D02EB3216A00FE9B7C /* MyTableViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386491CF2EB3216A00FE9B7C /* MyTableViewUITests.swift */; };
 		386491D22EB3216A00FE9B7C /* MyTableViewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386491D12EB3216A00FE9B7C /* MyTableViewUITestsLaunchTests.swift */; };
+		386491DF2EB3280400FE9B7C /* ItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386491DE2EB3280400FE9B7C /* ItemTableViewController.swift */; };
+		386491E12EB32ACE00FE9B7C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386491E02EB32ACE00FE9B7C /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		386491CB2EB3216A00FE9B7C /* MyTableViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyTableViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		386491CF2EB3216A00FE9B7C /* MyTableViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewUITests.swift; sourceTree = "<group>"; };
 		386491D12EB3216A00FE9B7C /* MyTableViewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		386491DE2EB3280400FE9B7C /* ItemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewController.swift; sourceTree = "<group>"; };
+		386491E02EB32ACE00FE9B7C /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 		386491AD2EB3216500FE9B7C /* MyTableView */ = {
 			isa = PBXGroup;
 			children = (
+				386491E02EB32ACE00FE9B7C /* Item.swift */,
 				386491AE2EB3216500FE9B7C /* AppDelegate.swift */,
 				386491B02EB3216500FE9B7C /* SceneDelegate.swift */,
 				386491B22EB3216500FE9B7C /* ViewController.swift */,
@@ -106,6 +111,7 @@
 				386491B72EB3216900FE9B7C /* Assets.xcassets */,
 				386491B92EB3216900FE9B7C /* LaunchScreen.storyboard */,
 				386491BC2EB3216900FE9B7C /* Info.plist */,
+				386491DE2EB3280400FE9B7C /* ItemTableViewController.swift */,
 			);
 			path = MyTableView;
 			sourceTree = "<group>";
@@ -260,6 +266,8 @@
 			files = (
 				386491B32EB3216500FE9B7C /* ViewController.swift in Sources */,
 				386491AF2EB3216500FE9B7C /* AppDelegate.swift in Sources */,
+				386491E12EB32ACE00FE9B7C /* Item.swift in Sources */,
+				386491DF2EB3280400FE9B7C /* ItemTableViewController.swift in Sources */,
 				386491B12EB3216500FE9B7C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

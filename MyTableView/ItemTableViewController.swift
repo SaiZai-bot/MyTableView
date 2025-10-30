@@ -8,6 +8,15 @@
 import UIKit
 
 class ItemTableViewController: UITableViewController {
+    
+    var items:[Item] = [
+        Item(name: "Apple", desc: "Red Apple", price: 18.50, imageFile: "apple"),
+        Item(name: "Orange", desc: "Sweet Orange", price: 19.50, imageFile: "orange"),
+        Item(name: "Mango", desc: "Yellow Sweet Mango", price: 25.00, imageFile: "mango"),
+        Item(name: "Banana", desc: "Banana from Davao", price: 7.75, imageFile: "banana"),
+        Item(name: "Guava", desc: "Big Guava", price: 20.00, imageFile: "guava"),
+        Item(name: "Strawberry", desc: "1 pack Sweet Strawberry", price: 35.00, imageFile: "strawberry")
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,23 +32,26 @@ class ItemTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return items.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "itemID", for: indexPath)
+        cell.textLabel?.text = items[indexPath.row].name
+        cell.detailTextLabel?.text = String(items[indexPath.row].price)
+        cell.imageView?.image = UIImage(named: items[indexPath.row].imageFile)
 
         // Configure the cell...
 
         return cell
     }
-    */
+
 
     /*
     // Override to support conditional editing of the table view.
@@ -76,14 +88,19 @@ class ItemTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        let vc = segue.destination as! ItemViewController
+//        if let indexPath = self.tableView.indexPathForSelectedRow {
+//            let item = items[indexPath.row]
+//            vc.sendItem = item
+//        }
+//        // Get the new view controller using segue.destination.
+//        // Pass the selected object to the new view controller.
+//    }
+    
 
 }
